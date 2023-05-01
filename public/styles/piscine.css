@@ -13,12 +13,8 @@
 
 /* Utility Classes */
 
-.ff-display {
-    font-family: var(--ff-display);
-}
-
-.ff-body {
-    font-family: var(--ff-body);
+.text-emphasized {
+    color: var(--clr-light-main);
 }
 
 /* General Styling */
@@ -70,6 +66,7 @@ body {
 
     letter-spacing: 0.10rem;
     word-spacing: 0.15rem;
+    line-height: 2.2em;
     background-color: var(--clr-dark);
     font-family: var(--ff-body);
     font-size: clamp(1rem, 2.5vw, 1.5rem);
@@ -85,6 +82,7 @@ body {
     background-color: var(--clr-dark);
     border-radius: 0 2em 2em 0;
     opacity: .75;
+    z-index: 1;
 }
 
 .section-heading {
@@ -104,6 +102,12 @@ body {
 .section-subheading {
     font-family: var(--ff-display);
     color: var(--clr-lighter-main);
+    transition: 1s;
+}
+
+.section-subheading:hover {
+    transform: translateX(10px);
+    color: var(--clr-main);
 }
 
 .primary-header {
@@ -111,17 +115,21 @@ body {
 }
 
 .banner-container {
+    position: relative;
     width: 100vw;
     height: 750px;
     overflow: hidden;
 }
 
 .banner-container > img {
+    position: absolute;
     width: 100%;
     height: auto;
+    left: 0;
+    bottom: 0;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1125px) {
     .banner-container > img {
         width: auto;
         height: 100%;
@@ -132,13 +140,16 @@ body {
     background-color: var(--clr-very-dark);
     margin-top: 500px;
     max-width: 100%;
+    padding-block: 1em;
+}
 
-    padding: 1em;
+.primary-footer > p {
+    padding-inline: 2em;
 }
 
 /* Drawer Navigation Toggling */
 #nav-bar {
-    z-index: 1;
+    z-index: 2;
     left: -360px;
     position: fixed;
     top: 0;
@@ -160,15 +171,20 @@ body {
 }
 
 .nav-item > a {
-    opacity: 0.75;
+    opacity: 0.5;
     background-color: var(--clr-light-main);
     color: var(--clr-light);
 
     padding: .25em;
     border-radius: 0 .5em .5em 0;
+    transition: 1s;
 }
 
-.logo > a{
+.nav-item > a:hover {
+    opacity: 1;
+}
+
+.logo > a {
     background-color: transparent;
 }
 

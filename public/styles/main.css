@@ -1,20 +1,21 @@
 :root {
-    --ff-body: 'Patrick Hand SC', 'Noto Sans Thai Looped', serif;
+    --ff-body: 'Josefin Sans', 'Noto Sans Thai Looped', sans-serif;
     --ff-display: 'Bungee', sans-serif;
     --clr-dark: hsl(40, 7%, 8%);
     --clr-very-dark: hsl(40, 7%, 5%);
     --clr-light: hsl(246, 71%, 97%);
-    --clr-main: hsl(0, 78%, 33%);
-    --clr-light-main: hsl(29, 100%, 50%);
-    --clr-lighter-main: hsl(316, 100%, 91%);
-    --clr-secondary: hsl(244, 84%, 41%);
-    --clr-darker-secondary: hsl(229, 76%, 10%);
 }
 
 /* Utility Classes */
 
 .text-right {
     text-align: right;
+}
+
+.even-columns {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 1fr;
 }
 
 /* General Styling */
@@ -25,10 +26,14 @@ body {
 
     letter-spacing: 0.10rem;
     word-spacing: 0.15rem;
-    background-color: var(--clr-dark);
     font-family: var(--ff-body);
     font-size: clamp(1rem, 2.5vw, 2rem);
     color: var(--clr-light);
+
+    background-image: radial-gradient(#3b3b46 2px, transparent 2px), radial-gradient(#3b3b46 2px, transparent 2px);
+    background-size: 47px 47px;
+    background-position: 0 0, 23.5px 23.5px;
+    background-color: #121214;
 }
 
 a {
@@ -40,28 +45,36 @@ a {
 
 .title-heading {
     font-family: var(--ff-display);
-    font-size: clamp(1.5rem, 3vw, 3rem);
-    color: var(--clr-main);
+    font-size: clamp(1.5rem, 4vw, 3.5rem);
+    color: var(--clr-light);
     background-color: var(--clr-dark);
-}
-
-.section-heading {
-    font-family: var(--ff-display);
-    font-size: clamp(1rem, 3.75vw, 3rem);
-    transition: 1s;
-
-    color: var(--clr-light-main);
     text-align: center;
 }
 
-.section-heading:hover {
-    transform: translateY(-10px);
-    color: var(--clr-main);
+.primary-header {
+    opacity: 0.75;
 }
 
-.section-subheading {
-    font-family: var(--ff-display);
-    color: var(--clr-lighter-main);
+.institution-text {
+    font-size: clamp(1.5rem, 4vw, 5rem);
+    text-align: center;
+    transition: 1s;
+}
+
+#tpn > .institution-text:hover {
+    background-image: linear-gradient(45deg, #f815ed, #7b97e9);
+    border-radius: 15px;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+#piscine > .institution-text:hover {
+background-image: linear-gradient(45deg, #073615, #7b97e9);
+border-radius: 15px;
+-webkit-background-clip: text;
+background-clip: text;
+color: transparent;
 }
 
 .primary-header {
@@ -75,8 +88,10 @@ a {
     width: 100%;
 
     background-color: var(--clr-very-dark);
+
+    opacity: 0.75;
 }
 
 .primary-footer > p {
-    padding: 1em;
+    padding-inline: 1em;
 }
