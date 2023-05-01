@@ -4,7 +4,11 @@
     --clr-dark: hsl(40, 7%, 8%);
     --clr-very-dark: hsl(40, 7%, 5%);
     --clr-light: hsl(246, 71%, 97%);
-    --clr-main: hsl(313, 100%, 50%);
+    --clr-main: hsl(0, 78%, 33%);
+    --clr-light-main: hsl(29, 100%, 50%);
+    --clr-lighter-main: hsl(316, 100%, 91%);
+    --clr-secondary: hsl(244, 84%, 41%);
+    --clr-darker-secondary: hsl(229, 76%, 10%);
 }
 
 /* Utility Classes */
@@ -18,13 +22,52 @@
 body {
     margin: 0;
     padding: 0;
-    
-    font-family: var(--ff-body);
+
+    letter-spacing: 0.10rem;
+    word-spacing: 0.15rem;
     background-color: var(--clr-dark);
+    font-family: var(--ff-body);
+    font-size: clamp(1rem, 2.5vw, 2rem);
     color: var(--clr-light);
 }
 
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
 /* Specific Styling */
+
+.title-heading {
+    font-family: var(--ff-display);
+    font-size: clamp(1.5rem, 3vw, 3rem);
+    color: var(--clr-main);
+    background-color: var(--clr-dark);
+}
+
+.section-heading {
+    font-family: var(--ff-display);
+    font-size: clamp(1rem, 3.75vw, 3rem);
+    transition: 1s;
+
+    color: var(--clr-light-main);
+    text-align: center;
+}
+
+.section-heading:hover {
+    transform: translateY(-10px);
+    color: var(--clr-main);
+}
+
+.section-subheading {
+    font-family: var(--ff-display);
+    color: var(--clr-lighter-main);
+}
+
+.primary-header {
+    background-color: var(--clr-main);
+}
+
 
 .primary-footer {
     position: absolute;
