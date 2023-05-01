@@ -1,0 +1,16 @@
+:root {
+    --ff-body: 'Bitter', serif;
+    --ff-display: 'Raleway', sans-serif;
+    --clr-dark: rgb(18, 3, 9);
+}
+
+body {
+    font-family: var(--ff-display);
+    background-image: url(src/institutions-map.png);
+}
+
+.even-columns {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 1fr;
+}
