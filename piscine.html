@@ -4,26 +4,65 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>42 Bangkok</title>
+        <link rel="stylesheet" href="public/styles/piscine.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Noto+Sans+Thai+Looped&family=Patrick+Hand+SC&display=swap" rel="stylesheet">
     </head>
     <body class="42">
-        <div class="42-img">
-            <img src="https://www.42network.org/wp-content/uploads/2021/04/42-BANGKOK@3x-420x140.png" alt="42pic" class="42-logo">
-        </div>
-        <h1 style="text-align: center;">42 Bangkok KMITL</h1>
-        <img src="https://tse2.mm.bing.net/th?id=OIP.ww5dBvbLKVpVb7xf-Bp8WQHaE7&pid=Api&P=0" alt="42-1stpic" class="42-img">
-        <h3 style="text-align: center">MOTTO</h3>
-        <p style="text-align: center;">ZERO TEACHER , ZERO CLASSES</p>
-        <h3 style="text-align: center;">LOCATION</h3>
-        <p style="text-align: center;">42 Bangkok,
-            4th floor KLLC Building/Central Library at King Mongkut’s Institute of Technology Ladkrabang, Chalongkrung Road, Ladkrabang, Bangkok Thailand 10520</p>
-        <h3>THE FOUNDING OF 42 BANGKOK</h3>
-        <P>42 Bangkok was founded by Prof. Dr. Suchatvee Suwansawat, President of King Mongkut’s Institute of Technology Ladkrabang (KMITL), Bangkok, Thailand. He was inspired to bring the 42 learning platform to Thailand when visiting Ecole 42 Paris, France in March 2019. This unique development model that focuses on computer programming knowledge by having students self educate themselves was found to be very effective. This program, developed by a leading French academic computer team, happened to be consistent with the policies of the Ministry of Higher Education, Science, Research and Innovation of Thailand; whose main goal is to create and develop Smart Citizens, providing equal opportunities for lifelong learning to people of all ages, ultimately driving innovative research and development to satisfy the country’s needs. Therefore, in collaboration with Ecole 42 Paris, 42 Bangkok was established as a new member of the 42 Network with 33 campuses around the world as well as being the first to exist in the ASEAN community. Established through a memorandum of understanding between the institute and Ecole 42 Paris, France on 15 November 2019.</P>
-    <h3 style="text-align: center;">CONTACT</h3>
-    <p><a href="https://www.42bangkok.com/">Go to 42 Bangkok KMITL</a></p>
-    <p><a href="https://www.42bangkok.com/about-us/">About 42 Bangkok</a></p>
-    <p><a href="https://www.facebook.com/42Bangkok">Facebook</a></p>
-    <p><a href="https://www.instagram.com/42bangkok/?hl=en">Instagram</a></p>
-    <p>Phone : +66 2-3298000 ext. 7480</p>
-    <p>Email : <a href="mailto:info@42bangkok.com">info@42bangkok.com , <a href="mailto:42bangkok@kmilt.ac.th">42bangkok@kmitl.ac.th</a></a></p>
+        <nav id="nav-bar">
+            <a href="index.html" class="to-index">Back</a>
+            <div class="nav-toggle-button" onclick="navActivation()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="ff-display">
+                <li class="nav-item logo"><a href="#"><img src="public/img/piscine-logo.jpg" alt="Logo" width="175px"></a></li>
+                <li class="nav-item"><a href="#motto">Motto</a></li>
+                <li class="nav-item"><a href="#location">Location</a></li>
+                <li class="nav-item"><a href="#history">History</a></li>
+                <li class="nav-item"><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <main>
+            <header class="primary-header">
+                <div class="banner-container">
+                    <h1 class="title-heading">42<br>Bangkok</h1>
+                    <img src="public/img/piscine-interior.png" alt="banner">
+                </div>
+            </header>
+            <section id="motto">
+                <div class="container">
+                    <h2 class="section-heading">MOTTO</h2>
+                    <p>Zero teachers, zero classes</p>
+                    <hr class="separator">
+                </div>
+            </section>
+            <section id="location">
+                <div class="container">
+                    <h2 class="section-heading">LOCATION</h2>
+                    <p>42 Bangkok, 4th floor KLLC Building/Central Library at King Mongkut’s Institute of Technology Ladkrabang, Chalongkrung Road, Ladkrabang, Bangkok Thailand 10520</p>
+                    <hr class="separator">
+                </div>
+            </section>
+            <section id="history">
+                <div class="container">
+                    <h2 class="section-heading">HISTORY</h2>
+                    <p>42 Bangkok was founded by Prof. Dr. Suchatvee Suwansawat, President of King Mongkut’s Institute of Technology Ladkrabang (KMITL), Bangkok, Thailand. He was inspired to bring the 42 learning platform to Thailand when visiting Ecole 42 Paris, France in March 2019. This unique development model that focuses on computer programming knowledge by having students self educate themselves was found to be very effective. This program, developed by a leading French academic computer team, happened to be consistent with the policies of the Ministry of Higher Education, Science, Research and Innovation of Thailand; whose main goal is to create and develop Smart Citizens, providing equal opportunities for lifelong learning to people of all ages, ultimately driving innovative research and development to satisfy the country’s needs. Therefore, in collaboration with Ecole 42 Paris, 42 Bangkok was established as a new member of the 42 Network with 33 campuses around the world as well as being the first to exist in the ASEAN community. Established through a memorandum of understanding between the institute and Ecole 42 Paris, France on 15 November 2019.</p>
+                    <hr class="separator">
+                </div>
+            </section>
+        </main>
+        <footer id="contact" class="primary-footer">
+            <h2 class="section-heading">CONTACT</h2>
+            <p><a href="https://www.42bangkok.com/">Go to 42 Bangkok KMITL</a></p>
+            <p><a href="https://www.42bangkok.com/about-us/">About 42 Bangkok</a></p>
+            <p><a href="https://www.facebook.com/42Bangkok">Facebook</a></p>
+            <p><a href="https://www.instagram.com/42bangkok/?hl=en">Instagram</a></p>
+            <p>Phone : +66 2-3298000 ext. 7480</p>
+            <p>Email : <a href="mailto:info@42bangkok.com">info@42bangkok.com , <a href="mailto:42bangkok@kmilt.ac.th">42bangkok@kmitl.ac.th</a></a></p>
+        </footer>
+        <script src="public/scripts/main.js"></script>
     </body>
 </html>

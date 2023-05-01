@@ -4,20 +4,21 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>TPN</title>
-        <link rel="stylesheet" href="styles/tpn.css">
+        <link rel="stylesheet" href="public/styles/tpn.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Noto+Sans+Thai+Looped&family=Patrick+Hand+SC&display=swap" rel="stylesheet">
     </head>
-    <body class="tpn">
+    <body>
         <nav id="nav-bar">
+            <a href="index.html" class="to-index">Back</a>
             <div class="nav-toggle-button" onclick="navActivation()">
                 <span></span>
                 <span></span>
                 <span></span>
             </div>
             <ul class="ff-display">
-                <li class="nav-item"><a href="#"><img src="src/phrakiaw.png" alt="Logo" width="100px" class="logo"></a></li>
+                <li class="nav-item logo"><a href="#"><img src="public/img/phrakiaw.png" alt="Logo" width="175px"></a></li>
                 <li class="nav-item"><a href="#motto">Motto</a></li>
                 <li class="nav-item"><a href="#location">Location</a></li>
                 <li class="nav-item"><a href="#history">History</a></li>
@@ -28,12 +29,30 @@
             <header class="primary-header">
                 <div class="banner-container">
                     <h1 class="title-heading">Triamudomsuksa<br>Pattanakarn<br>Nonthaburi<br>School</h1>
-                    <img src="src/tpn-building-6.jpg" alt="banner">
+                    <img src="public/img/tpn-building-6.jpg" alt="banner">
                 </div>
             </header>
             <section id="motto">
                 <div class="container">
                     <h2 class="section-heading">MOTTO</h2>
+                    <h3 class="section-subheading">Vision</h3>
+                    <p>สถานศึกษาชั้นนำ เลิศล้ำทางวิชาการและคุณธรรมระดับมาตรฐานสากล บนพื้นฐานความเป็นไทย</p>
+                    <h3 class="section-subheading">Identity</h3>
+                    <p>วิชาการเด่น เน้นคุณธรรม</p>
+                    <h3 class="section-subheading">Uniqueness</h3>
+                    <p>สิ่งแวดล้อมดี วิชาการเด่น เน้นวิถีไทย</p>
+                    <h3 class="section-subheading">Philosophy</h3>
+                    <p>ความเป็นเลิศทางวิชาการ และคุณธรรม</p>
+                    <h3 class="section-subheading">Organization Vulture</h3>
+                    <p>ยิ้มไหว้ทักทายกัน</p>
+                    <h3 class="section-subheading">Corporate Value</h3>
+                    <p>
+                        T (Technology) = การใช้เทคโนโลยีในการจัดการศึกษา<br>
+                        P (Professional) = ความเป็นกมืออาชีพของผู้บริหาร ครู และบุคคลากรทางการศึกษา<br>
+                        N (Network) = สร้างเครือข่ายการมีส่วนร่วมในการพัฒนาองค์กร<br>
+                        O (Organization) = เป็นองค์กรแห่งความรู้<br>
+                        K (Kindness) = ความเมตตา มีน้ำใจ ในองค์กร 
+                    </p>
                     <h3 class="section-subheading">Vision</h3>
                     <p>สถานศึกษาชั้นนำ เลิศล้ำทางวิชาการและคุณธรรมระดับมาตรฐานสากล บนพื้นฐานความเป็นไทย</p>
                     <hr class="separator">
@@ -59,6 +78,6 @@
             <p>Phone : 02-595-1368</p>
             <p>Fax : 02-595-1240</p>
         </footer>
-        <script src="scripts/tpn.js"></script>
+        <script src="public/scripts/main.js"></script>
     </body>
 </html>

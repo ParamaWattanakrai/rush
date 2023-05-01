@@ -4,11 +4,11 @@
     --clr-dark: hsl(40, 7%, 8%);
     --clr-very-dark: hsl(40, 7%, 5%);
     --clr-light: hsl(246, 71%, 97%);
-    --clr-main: hsl(313, 100%, 50%);
-    --clr-light-main: hsl(330, 100%, 73%);
-    --clr-lighter-main: hsl(316, 100%, 91%);
-    --clr-secondary: hsl(244, 84%, 41%);
-    --clr-darker-secondary: hsl(229, 76%, 10%);
+    --clr-main: hsl(138, 100%, 50%);
+    --clr-light-main: hsl(150, 67%, 41%);
+    --clr-lighter-main: hsl(171, 92%, 76%);
+    --clr-secondary: hsl(231, 69%, 34%);
+    --clr-darker-secondary: hsl(222, 85%, 8%);
 }
 
 /* Utility Classes */
@@ -45,7 +45,6 @@ a {
 
 p {
     margin-block: 1.75em;
-    transition: 0.5s;
 }
 
 .container {
@@ -137,8 +136,6 @@ body {
     padding: 1em;
 }
 
-/* Animation and Java Script Related */
-
 /* Drawer Navigation Toggling */
 #nav-bar {
     z-index: 1;
@@ -171,6 +168,10 @@ body {
     border-radius: 0 .5em .5em 0;
 }
 
+.logo > a{
+    background-color: transparent;
+}
+
 .nav-toggle-button {
     position: absolute;
     top: 30px;
@@ -195,4 +196,9 @@ body {
     background-color: var(--clr-light);
     display: block;
     margin-top: 10px;
+}
+
+.to-index {
+    font-family: var(--ff-display);
+    padding: 1em;
 }

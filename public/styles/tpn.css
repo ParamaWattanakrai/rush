@@ -1,0 +1,204 @@
+:root {
+    --ff-body: 'Patrick Hand SC', 'Noto Sans Thai Looped', serif;
+    --ff-display: 'Bungee', sans-serif;
+    --clr-dark: hsl(40, 7%, 8%);
+    --clr-very-dark: hsl(40, 7%, 5%);
+    --clr-light: hsl(246, 71%, 97%);
+    --clr-main: hsl(313, 100%, 50%);
+    --clr-light-main: hsl(330, 100%, 73%);
+    --clr-lighter-main: hsl(316, 100%, 91%);
+    --clr-secondary: hsl(244, 84%, 41%);
+    --clr-darker-secondary: hsl(229, 76%, 10%);
+}
+
+/* Utility Classes */
+
+.ff-display {
+    font-family: var(--ff-display);
+}
+
+.ff-body {
+    font-family: var(--ff-body);
+}
+
+/* General Styling */
+
+html {
+    scroll-behavior: smooth;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    padding-left: 0;
+    text-indent: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+p {
+    margin-block: 1.75em;
+}
+
+.container {
+    --max-width: 1440px;
+    --padding: 1.5em;
+
+    width: min(var(--max-width), 100% - var(--padding) * 2);
+    margin-inline: auto;
+}
+
+.separator {
+    border: none;
+    background-color: var(--clr-secondary);
+    width: 90%;
+    height: 5px;
+    margin-top: 40px;
+    margin-bottom: 100px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+
+    letter-spacing: 0.10rem;
+    word-spacing: 0.15rem;
+    background-color: var(--clr-dark);
+    font-family: var(--ff-body);
+    font-size: clamp(1rem, 2.5vw, 1.5rem);
+    color: var(--clr-light);
+}
+
+.title-heading {
+    position: absolute;
+    padding: 1em 2em 1em 2em;
+    font-family: var(--ff-display);
+    font-size: clamp(1.5rem, 3vw, 3rem);
+    color: var(--clr-main);
+    background-color: var(--clr-dark);
+    border-radius: 0 2em 2em 0;
+    opacity: .75;
+}
+
+.section-heading {
+    font-family: var(--ff-display);
+    font-size: clamp(1rem, 3.75vw, 3rem);
+    transition: 1s;
+
+    color: var(--clr-light-main);
+    text-align: center;
+}
+
+.section-heading:hover {
+    transform: translateY(-10px);
+    color: var(--clr-main);
+}
+
+.section-subheading {
+    font-family: var(--ff-display);
+    color: var(--clr-lighter-main);
+}
+
+.primary-header {
+    background-color: var(--clr-main);
+}
+
+.banner-container {
+    width: 100vw;
+    height: 750px;
+    overflow: hidden;
+}
+
+.banner-container > img {
+    width: 100%;
+    height: auto;
+}
+
+@media (max-width: 1000px) {
+    .banner-container > img {
+        width: auto;
+        height: 100%;
+    }
+}
+
+.primary-footer {
+    background-color: var(--clr-very-dark);
+    margin-top: 500px;
+    max-width: 100%;
+
+    padding: 1em;
+}
+
+/* Drawer Navigation Toggling */
+#nav-bar {
+    z-index: 1;
+    left: -360px;
+    position: fixed;
+    top: 0;
+    width: 360px;
+    height: 100vh;
+
+    background: linear-gradient(
+        to right, var(--clr-darker-secondary) , transparent);
+    
+    transition: 1s;
+}
+
+#nav-bar.active {
+    left: 0;
+}
+
+.nav-item {
+    margin: 2em 0 0 1em;
+}
+
+.nav-item > a {
+    opacity: 0.75;
+    background-color: var(--clr-light-main);
+    color: var(--clr-light);
+
+    padding: .25em;
+    border-radius: 0 .5em .5em 0;
+}
+
+.logo > a{
+    background-color: transparent;
+}
+
+.nav-toggle-button {
+    position: absolute;
+    top: 30px;
+    left: 390px;
+
+    transition: 1s;
+}
+
+@media (max-width: 530px) {
+    #nav-bar, .nav-toggle-button {
+        display: none;
+    }
+}
+
+.nav-toggle-button:hover {
+    transform: translateX(15px);
+}
+
+.nav-toggle-button span{
+    width: 45px;
+    height: 5px;
+    background-color: var(--clr-light);
+    display: block;
+    margin-top: 10px;
+}
+
+.to-index {
+    font-family: var(--ff-display);
+    padding: 1em;
+}
