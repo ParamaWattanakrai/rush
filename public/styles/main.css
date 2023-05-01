@@ -1,16 +1,39 @@
 :root {
-    --ff-body: 'Bitter', serif;
-    --ff-display: 'Raleway', sans-serif;
-    --clr-dark: rgb(18, 3, 9);
+    --ff-body: 'Patrick Hand SC', 'Noto Sans Thai Looped', serif;
+    --ff-display: 'Bungee', sans-serif;
+    --clr-dark: hsl(40, 7%, 8%);
+    --clr-very-dark: hsl(40, 7%, 5%);
+    --clr-light: hsl(246, 71%, 97%);
+    --clr-main: hsl(313, 100%, 50%);
 }
+
+/* Utility Classes */
+
+.text-right {
+    text-align: right;
+}
+
+/* General Styling */
 
 body {
-    font-family: var(--ff-display);
-    background-image: url(src/institutions-map.png);
+    margin: 0;
+    padding: 0;
+    
+    font-family: var(--ff-body);
+    background-color: var(--clr-dark);
+    color: var(--clr-light);
 }
 
-.even-columns {
-    display: grid;
-    grid-auto-flow: column;
-    grid-auto-columns: 1fr;
+/* Specific Styling */
+
+.primary-footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+
+    background-color: var(--clr-very-dark);
+}
+
+.primary-footer > p {
+    padding: 1em;
 }
