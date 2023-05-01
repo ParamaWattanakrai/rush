@@ -17,6 +17,14 @@
     color: var(--clr-light-main);
 }
 
+.decorated-list {
+    list-style: circle;
+}
+
+.decorated-list > li {
+    padding-left: 1em;
+}
+
 /* General Styling */
 
 html {
