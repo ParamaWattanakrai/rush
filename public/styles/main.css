@@ -30,10 +30,10 @@ body {
     font-size: clamp(1rem, 2.5vw, 2rem);
     color: var(--clr-light);
 
-    background-image: radial-gradient(#3b3b46 2px, transparent 2px), radial-gradient(#3b3b46 2px, transparent 2px);
+    background-image: radial-gradient(#3df09a 2px, transparent 2px), radial-gradient(#3b3b46 2px, transparent 2px);
     background-size: 47px 47px;
     background-position: 0 0, 23.5px 23.5px;
-    background-color: #121214;
+    background-color: #121615;
 }
 
 a {
