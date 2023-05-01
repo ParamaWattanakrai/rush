@@ -3,7 +3,8 @@
     --ff-display: 'Bungee', sans-serif;
     --clr-dark: hsl(40, 7%, 8%);
     --clr-very-dark: hsl(40, 7%, 5%);
-    --clr-light: hsl(246, 71%, 97%);
+    --clr-light: hsl(22, 73%, 97%);
+    --clr-main: hsl(22, 100%, 68%);
 }
 
 /* Utility Classes */
@@ -46,7 +47,7 @@ a {
 .title-heading {
     font-family: var(--ff-display);
     font-size: clamp(1.5rem, 4vw, 3.5rem);
-    color: var(--clr-light);
+    color: var(--clr-main);
     background-color: var(--clr-dark);
     text-align: center;
 }
@@ -70,11 +71,11 @@ a {
 }
 
 #piscine > .institution-text:hover {
-background-image: linear-gradient(45deg, #073615, #7b97e9);
-border-radius: 15px;
--webkit-background-clip: text;
-background-clip: text;
-color: transparent;
+    background-image: linear-gradient(45deg, #073615, #7b97e9);
+    border-radius: 15px;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
 }
 
 .primary-header {
