@@ -205,7 +205,7 @@ body {
 }
 
 @media (max-width: 530px) {
-    #nav-bar, .nav-toggle-button {
+    .nav-toggle-button {
         display: none;
     }
 }
